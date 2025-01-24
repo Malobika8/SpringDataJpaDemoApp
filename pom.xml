@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.spring.datajpa</groupId>
+    <artifactId>SpringDataJpaDemoApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- Spring Context (Required for Spring beans and DI) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.24</version> <!-- Spring 5.x version -->
+        </dependency>
+
+        <!-- Spring ORM (Required for Spring-Hibernate integration) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>5.3.24</version> <!-- Spring ORM version compatible with Spring 5.x -->
+        </dependency>
+
+        <!-- Hibernate Core 5.x (Using Javax Persistence API for Hibernate 5.x) -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.15.Final</version> <!-- Hibernate 5.x (supports javax.persistence) -->
+        </dependency>
+
+        <!-- MySQL Connector (JDBC driver for MySQL) -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.3.0</version>
+        </dependency>
+
+        <!-- Spring JDBC (Required if you're using JDBC functionality) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.24</version> <!-- Compatible with Spring 5.x -->
+        </dependency>
+
+        <!-- Javax Persistence API (Compatible with Hibernate 5.x) -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version> <!-- Javax Persistence API -->
+        </dependency>
+
+        <!-- Javax Transaction API (Compatible with Hibernate 5.x) -->
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>javax.transaction-api</artifactId>
+            <version>1.3</version> <!-- Javax Transaction API -->
+        </dependency>
+
+        <!-- Spring Transaction (For @Transactional support in Spring) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.3.24</version> <!-- Compatible with Spring 5.x -->
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.7.6</version>
+        </dependency>
+
+    </dependencies>
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
+</project>
